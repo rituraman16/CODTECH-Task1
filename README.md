@@ -6,26 +6,31 @@ Duration :1st JUNE 2024 to 13th JULY 2024
 Mentor : SRAVANI GOUNI
 
 ## output for or gate
-![Screenshot 2024-06-26 115232](https://github.com/AnshRajBitS/CODETECH-task-1/assets/173932543/2e23244c-a6f8-43a1-9202-69fe34a91b2f)
+![Screenshot (21)](https://github.com/rituraman16/COTECH-Task1/assets/173946342/ada08390-898d-4fdf-ac33-7f93613943cc)
 ## output for and gate
-![Screenshot 2024-06-26 120045](https://github.com/AnshRajBitS/CODETECH-task-1/assets/173932543/b14f69ec-a5aa-4605-afb6-a400912fb0cb)
+![Screenshot (20)](https://github.com/rituraman16/COTECH-Task1/assets/173946342/af88de8d-e984-4803-89af-25779eecec7e)
 ## output for not gate
-![Screenshot 2024-06-26 211203](https://github.com/AnshRajBitS/CODETECH-task-1/assets/173932543/db39a798-2420-4d3b-a7d4-918919b26490)
+![Screenshot (22)](https://github.com/rituraman16/COTECH-Task1/assets/173946342/d4d6c235-f691-4592-91b2-4f71be2d8dc7)
 ## output for nor gate
-![Screenshot 2024-06-26 212023](https://github.com/AnshRajBitS/CODETECH-task-1/assets/173932543/bd7831c6-0290-4842-9382-b4c61430f485)
+![Screenshot (24)](https://github.com/rituraman16/COTECH-Task1/assets/173946342/137bddd7-0c58-4e72-8847-e90776bfd2a2)
 ## output for nand gate
-![Screenshot 2024-06-26 213420](https://github.com/AnshRajBitS/CODETECH-task-1/assets/173932543/0180542a-8cb2-406d-85d6-77e1f7bd96b2)
+![Screenshot (23)](https://github.com/rituraman16/COTECH-Task1/assets/173946342/9d634136-71e9-46a9-9fb2-d6551b9a0890)
 ## output for xor gate
-![Screenshot 2024-06-26 120955](https://github.com/AnshRajBitS/CODETECH-task-1/assets/173932543/0bd1ecee-0475-49e0-a1b2-65d34db05499)
+![Screenshot (26)](https://github.com/rituraman16/COTECH-Task1/assets/173946342/47870aa1-ca36-459f-821d-1802a8cdec0d)
 ## output for xnor gate
-![Screenshot 2024-06-26 211615](https://github.com/AnshRajBitS/CODETECH-task-1/assets/173932543/c64dd260-5202-4a7e-9673-014ec5fcfdab)
+![Screenshot (27)](https://github.com/rituraman16/COTECH-Task1/assets/173946342/6174b6de-c892-4fa7-93e1-2bd9baa377d9)
 ## output for half adder
-![Screenshot 2024-06-26 124151](https://github.com/AnshRajBitS/CODETECH-task-1/assets/173932543/e5c49e86-517d-4867-b034-1ffdde48183a)
+![Screenshot (28)](https://github.com/rituraman16/COTECH-Task1/assets/173946342/92d89dab-edca-4f38-9928-754a211ae609)
 ## output for full adder
-![Screenshot 2024-06-26 121425](https://github.com/AnshRajBitS/CODETECH-task-1/assets/173932543/13d32652-b9ec-4327-9236-de4129e064d7)
+![Screenshot (31)](https://github.com/rituraman16/COTECH-Task1/assets/173946342/2683e777-71a9-4320-9f58-b5e9919f9b8d)
 ## output for 2 to 1 multiplexer
-![Screenshot 2024-06-26 122535](https://github.com/AnshRajBitS/CODETECH-task-1/assets/173932543/31d36136-605d-4fc1-a76d-864e6ebfd37b)
-
+![Screenshot (32)](https://github.com/rituraman16/COTECH-Task1/assets/173946342/4071cb5b-ba59-4cb1-a7d2-38f34ac2e80d)
+## output for 4 to 1 multiplexer
+![Screenshot (33)](https://github.com/rituraman16/COTECH-Task1/assets/173946342/617624b5-0ef2-416a-849c-a6c73fba49ff)
+## output for 8 to 1 multiplexer
+![Screenshot (34)](https://github.com/rituraman16/COTECH-Task1/assets/173946342/c471d220-e562-4b11-9c96-33ecfc04854d)
+## output for 16 to 1 multiplexer
+![Screenshot (35)](https://github.com/rituraman16/COTECH-Task1/assets/173946342/734e57aa-86aa-4c8a-b94e-f21f090a939c)
 ### Overview of Verilog Logic Gates Project
 
 #### Objective
@@ -51,6 +56,9 @@ The objective of this project is to have basic digital logic circuits designed, 
      - Half Adder
      - Full Adder
      - 2-to-1 Multiplexer
+     - 4-to-1 Multiplexer
+     - 8-to-1 Multiplexer
+     - 16-to-1 Multiplexer
 
 4. **Writing Testbenches**:
    - Testbenches for each logic gate and combinational circuit are to be developed.
@@ -82,7 +90,10 @@ The objective of this project is to have basic digital logic circuits designed, 
    - Example modules:
      - `myhalfadder`
      - `myfulladder`
-     - `my2to1mux`
+     - `my2to1multiplexer`
+     - `my4to1multiplexer`
+     - `my8to1multiplexer`
+     - `my16to1multiplexer`
 
 3. **Testbenches**:
    - Each module is to have an associated testbench to verify its functionality.
