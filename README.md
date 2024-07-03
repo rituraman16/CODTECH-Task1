@@ -1,9 +1,9 @@
-Name : ANSH RAJ
-Company : CODTECH IT SOLUTIONS
-ID : CT6WDS74
-Domain : VLSI
-Duration :1st JUNE 2024 to 13th JULY 2024
-Mentor : SRAVANI GOUNI
+## Name: RITU RAMAN
+## Company: CODTECH IT SOLUTIONS 
+## ID: CT08DS1680
+## Domain: VLSI 
+## Duration: 5Th JUNE 2024 to 5Th JULY 2024 
+## Mentor: SRAVANI GOUNI
 
 ## Output for or gate
 ![Screenshot (21)](https://github.com/rituraman16/COTECH-Task1/assets/173946342/ada08390-898d-4fdf-ac33-7f93613943cc)
