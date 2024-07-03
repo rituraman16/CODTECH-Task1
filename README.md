@@ -5,31 +5,31 @@ Domain : VLSI
 Duration :1st JUNE 2024 to 13th JULY 2024
 Mentor : SRAVANI GOUNI
 
-## output for or gate
+## Output for or gate
 ![Screenshot (21)](https://github.com/rituraman16/COTECH-Task1/assets/173946342/ada08390-898d-4fdf-ac33-7f93613943cc)
-## output for and gate
+## Output for and gate
 ![Screenshot (20)](https://github.com/rituraman16/COTECH-Task1/assets/173946342/af88de8d-e984-4803-89af-25779eecec7e)
-## output for not gate
+## Output for not gate
 ![Screenshot (22)](https://github.com/rituraman16/COTECH-Task1/assets/173946342/d4d6c235-f691-4592-91b2-4f71be2d8dc7)
-## output for nor gate
+## Output for nor gate
 ![Screenshot (24)](https://github.com/rituraman16/COTECH-Task1/assets/173946342/137bddd7-0c58-4e72-8847-e90776bfd2a2)
-## output for nand gate
+## Output for nand gate
 ![Screenshot (23)](https://github.com/rituraman16/COTECH-Task1/assets/173946342/9d634136-71e9-46a9-9fb2-d6551b9a0890)
-## output for xor gate
+## Output for xor gate
 ![Screenshot (26)](https://github.com/rituraman16/COTECH-Task1/assets/173946342/47870aa1-ca36-459f-821d-1802a8cdec0d)
-## output for xnor gate
+## Output for xnor gate
 ![Screenshot (27)](https://github.com/rituraman16/COTECH-Task1/assets/173946342/6174b6de-c892-4fa7-93e1-2bd9baa377d9)
-## output for half adder
+## Output for half adder
 ![Screenshot (28)](https://github.com/rituraman16/COTECH-Task1/assets/173946342/92d89dab-edca-4f38-9928-754a211ae609)
-## output for full adder
+## Output for full adder
 ![Screenshot (31)](https://github.com/rituraman16/COTECH-Task1/assets/173946342/2683e777-71a9-4320-9f58-b5e9919f9b8d)
-## output for 2 to 1 multiplexer
+## Output for 2 to 1 multiplexer
 ![Screenshot (32)](https://github.com/rituraman16/COTECH-Task1/assets/173946342/4071cb5b-ba59-4cb1-a7d2-38f34ac2e80d)
-## output for 4 to 1 multiplexer
+## Output for 4 to 1 multiplexer
 ![Screenshot (33)](https://github.com/rituraman16/COTECH-Task1/assets/173946342/617624b5-0ef2-416a-849c-a6c73fba49ff)
-## output for 8 to 1 multiplexer
+## Output for 8 to 1 multiplexer
 ![Screenshot (34)](https://github.com/rituraman16/COTECH-Task1/assets/173946342/c471d220-e562-4b11-9c96-33ecfc04854d)
-## output for 16 to 1 multiplexer
+## Output for 16 to 1 multiplexer
 ![Screenshot (35)](https://github.com/rituraman16/COTECH-Task1/assets/173946342/734e57aa-86aa-4c8a-b94e-f21f090a939c)
 ### Overview of Verilog Logic Gates Project
 
