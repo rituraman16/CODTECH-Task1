@@ -1,0 +1,863 @@
+// VERILOG CODE AND TESTBENCH FOR NOT GATE //
+
+module mynotgate (
+    input wire a,
+    output wire y
+);
+
+assign y = ~a;
+
+endmodule
+
+//////////TESTBENCH////////////
+
+
+`timescale 1ns / 1ps
+
+module mynotgate_tb;
+
+    // Inputs
+    reg a;
+
+    // Output
+    wire y;
+
+    // Instantiate the NOT gate
+    mynotgate uut (
+        .a(a),
+        .y(y)
+    );
+
+    // Test vector
+    initial begin
+        // Initialize inputs
+        a = 0;
+        #10; // Wait for 10 time units
+
+        // Apply test vectors
+        a = 0; #10;
+        a = 1; #10;
+
+        // End of test
+        $finish;
+    end
+
+    // Monitor the inputs and output
+    initial begin
+        $monitor("Time = %0d, a = %b, y = %b", $time, a, y);
+    end
+
+endmodule
+
+
+____________________________________________________________________________________________________________
+// VERILOG CODE AND TESTBENCH FOR OR GATE //
+
+module myorgate (
+    input wire a,
+    input wire b,
+    output wire y
+);
+
+assign y = a | b;
+
+endmodule
+
+////////TESTBENCH///////////
+
+`timescale 1ns / 1ps
+
+module myorgate_tb;
+
+    // Inputs
+    reg a;
+    reg b;
+
+    // Output
+    wire y;
+
+    // Instantiate the OR gate
+    myorgate uut (
+        .a(a),
+        .b(b),
+        .y(y)
+    );
+
+    // Test vector
+    initial begin
+        // Initialize inputs
+        a = 0;
+        b = 0;
+        #10; // Wait for 10 time units
+
+        // Apply test vectors
+        a = 0; b = 0; #10;
+        a = 0; b = 1; #10;
+        a = 1; b = 0; #10;
+        a = 1; b = 1; #10;
+
+        // End of test
+        $finish;
+    end
+
+    // Monitor the inputs and output
+    initial begin
+        $monitor("Time = %0d, a = %b, b = %b, y = %b", $time, a, b, y);
+    end
+
+endmodule
+
+_____________________________________________________________________________________________
+// VERILOG CODE AND TESTBENCH FOR AND GATE //
+
+module myandgate (
+    input wire a,
+    input wire b,
+    output wire y
+);
+
+assign y = a & b;
+
+endmodule
+
+////////TESTBENCH///////////
+
+`timescale 1ns / 1ps
+
+module myandgate_tb;
+
+    // Inputs
+    reg a;
+    reg b;
+
+    // Output
+    wire y;
+
+    // Instantiate the AND gate
+    myandgate uut (
+        .a(a),
+        .b(b),
+        .y(y)
+    );
+
+    // Test vector
+    initial begin
+        // Initialize inputs
+        a = 0;
+        b = 0;
+        #10; // Wait for 10 time units
+
+        // Apply test vectors
+        a = 0; b = 0; #10;
+        a = 0; b = 1; #10;
+        a = 1; b = 0; #10;
+        a = 1; b = 1; #10;
+
+        // End of test
+        $finish;
+    end
+
+    // Monitor the inputs and output
+    initial begin
+        $monitor("Time = %0d, a = %b, b = %b, y = %b", $time, a, b, y);
+    end
+
+endmodule
+
+__________________________________________________________________________________________________________
+// VERILOG CODE AND TESTBENCH FOR NAND GATE //
+
+module mynandgate (
+    input wire a,
+    input wire b,
+    output wire y
+);
+
+assign y = ~(a & b);
+
+endmodule
+
+////////TESTBENCH/////////
+
+`timescale 1ns / 1ps
+
+module mynandgate_tb;
+
+    // Inputs
+    reg a;
+    reg b;
+
+    // Output
+    wire y;
+
+    // Instantiate the NAND gate
+    mynandgate uut (
+        .a(a),
+        .b(b),
+        .y(y)
+    );
+
+    // Test vector
+    initial begin
+        // Initialize inputs
+        a = 0;
+        b = 0;
+        #10; // Wait for 10 time units
+
+        // Apply test vectors
+        a = 0; b = 0; #10;
+        a = 0; b = 1; #10;
+        a = 1; b = 0; #10;
+        a = 1; b = 1; #10;
+
+        // End of test
+        $finish;
+    end
+
+    // Monitor the inputs and output
+    initial begin
+        $monitor("Time = %0d, a = %b, b = %b, y = %b", $time, a, b, y);
+    end
+
+endmodule
+
+___________________________________________________________________________________________________
+// VERILOG CODE AND TESTBENCH FOR NOR GATE //
+
+module mynorgate (
+    input wire a,
+    input wire b,
+    output wire y
+);
+
+assign y = ~(a | b);
+
+endmodule
+
+///////TESTBENCH//////////
+
+`timescale 1ns / 1ps
+
+module mynorgate_tb;
+
+    // Inputs
+    reg a;
+    reg b;
+
+    // Output
+    wire y;
+
+    // Instantiate the NOR gate
+    mynorgate uut (
+        .a(a),
+        .b(b),
+        .y(y)
+    );
+
+    // Test vector
+    initial begin
+        // Initialize inputs
+        a = 0;
+        b = 0;
+        #10; // Wait for 10 time units
+
+        // Apply test vectors
+        a = 0; b = 0; #10;
+        a = 0; b = 1; #10;
+        a = 1; b = 0; #10;
+        a = 1; b = 1; #10;
+
+        // End of test
+        $finish;
+    end
+
+    // Monitor the inputs and output
+    initial begin
+        $monitor("Time = %0d, a = %b, b = %b, y = %b", $time, a, b, y);
+    end
+
+endmodule
+
+______________________________________________________________________________________________________________
+// VERILOG CODE AND TESTBENCH FOR XNOR GATE //
+
+module myxnorgate (
+    input wire a,
+    input wire b,
+    output wire y
+);
+
+assign y = ~(a ^ b);
+
+endmodule
+
+//////TESTBENCH/////////
+
+`timescale 1ns / 1ps
+
+module myxnorgate_tb;
+
+    // Inputs
+    reg a;
+    reg b;
+
+    // Output
+    wire y;
+
+    // Instantiate the XNOR gate
+    myxnorgate uut (
+        .a(a),
+        .b(b),
+        .y(y)
+    );
+
+    // Test vector
+    initial begin
+        // Initialize inputs
+        a = 0;
+        b = 0;
+        #10; // Wait for 10 time units
+
+        // Apply test vectors
+        a = 0; b = 0; #10;
+        a = 0; b = 1; #10;
+        a = 1; b = 0; #10;
+        a = 1; b = 1; #10;
+
+        // End of test
+        $finish;
+    end
+
+    // Monitor the inputs and output
+    initial begin
+        $monitor("Time = %0d, a = %b, b = %b, y = %b", $time, a, b, y);
+    end
+
+endmodule
+
+_________________________________________________________________________________________________
+// VERILOG CODE AND TESTBENCH FOR XOR GATE //
+
+module myxorgate (
+    input wire a,
+    input wire b,
+    output wire y
+);
+
+assign y = a ^ b;
+
+endmodule
+
+///////TESTBENCH////////
+
+
+`timescale 1ns / 1ps
+
+module myxorgate_tb;
+
+    // Inputs
+    reg a;
+    reg b;
+
+    // Output
+    wire y;
+
+    // Instantiate the XOR gate
+    myxorgate uut (
+        .a(a),
+        .b(b),
+        .y(y)
+    );
+
+    // Test vector
+    initial begin
+        // Initialize inputs
+        a = 0;
+        b = 0;
+        #10; // Wait for 10 time units
+
+        // Apply test vectors
+        a = 0; b = 0; #10;
+        a = 0; b = 1; #10;
+        a = 1; b = 0; #10;
+        a = 1; b = 1; #10;
+
+        // End of test
+        $finish;
+    end
+
+    // Monitor the inputs and output
+    initial begin
+        $monitor("Time = %0d, a = %b, b = %b, y = %b", $time, a, b, y);
+    end
+
+endmodule
+
+___________________________________________________________________________________________________________
+// VERILOG CODE AND TESTBENCH FOR HALF ADDER //
+
+module myhalfadder (
+    input wire a,
+    input wire b,
+    output wire sum,
+    output wire carry
+);
+
+assign sum = a ^ b;
+assign carry = a & b;
+
+endmodule
+
+
+////////TESTBENCH///////////
+
+
+`timescale 1ns / 1ps
+
+module myhalfadder_tb;
+
+    // Inputs
+    reg a;
+    reg b;
+
+    // Outputs
+    wire sum;
+    wire carry;
+
+    // Instantiate the half adder
+    myhalfadder uut (
+        .a(a),
+        .b(b),
+        .sum(sum),
+        .carry(carry)
+    );
+
+    // Test vector
+    initial begin
+        // Initialize inputs
+        a = 0;
+        b = 0;
+        #10; // Wait for 10 time units
+
+        // Apply test vectors
+        a = 0; b = 0; #10;
+        a = 0; b = 1; #10;
+        a = 1; b = 0; #10;
+        a = 1; b = 1; #10;
+
+        // End of test
+        $finish;
+    end
+
+    // Monitor the inputs and outputs
+    initial begin
+        $monitor("Time = %0d, a = %b, b = %b, sum = %b, carry = %b", $time, a, b, sum, carry);
+    end
+
+endmodule
+_____________________________________________________________________________________________________
+// VERILOG CODE AND TESTBENCH FOR FULL ADDER //
+
+module myfulladder (
+    input wire a,
+    input wire b,
+    input wire cin,
+    output wire sum,
+    output wire cout
+);
+
+assign sum = a ^ b ^ cin;
+assign cout = (a & b) | (b & cin) | (a & cin);
+
+endmodule
+
+///////TESTBENCH//////////
+
+
+`timescale 1ns / 1ps
+
+module myfulladder_tb;
+
+    // Inputs
+    reg a;
+    reg b;
+    reg cin;
+
+    // Outputs
+    wire sum;
+    wire cout;
+
+    // Instantiate the full adder
+    myfulladder uut (
+        .a(a),
+        .b(b),
+        .cin(cin),
+        .sum(sum),
+        .cout(cout)
+    );
+
+    // Test vector
+    initial begin
+        // Initialize inputs
+        a = 0; b = 0; cin = 0;
+        #10; // Wait for 10 time units
+
+        // Apply test vectors
+        a = 0; b = 0; cin = 0; #10;
+        a = 0; b = 0; cin = 1; #10;
+        a = 0; b = 1; cin = 0; #10;
+        a = 0; b = 1; cin = 1; #10;
+        a = 1; b = 0; cin = 0; #10;
+        a = 1; b = 0; cin = 1; #10;
+        a = 1; b = 1; cin = 0; #10;
+        a = 1; b = 1; cin = 1; #10;
+
+        // End of test
+        $finish;
+    end
+
+    // Monitor the inputs and outputs
+    initial begin
+        $monitor("Time = %0d, a = %b, b = %b, cin = %b, sum = %b, cout = %b", $time, a, b, cin, sum, cout);
+    end
+
+endmodule
+_______________________________________________________________________________________________________________
+// VERILOG CODE AND TESTBENCH FOR 2 TO 1 MULTIPLEXER //
+
+
+module my2to1multiplexer (
+    input wire a,
+    input wire b,
+    input wire sel,
+    output wire y
+);
+
+assign y = sel ? b : a;
+
+endmodule
+
+
+////////TESTBENCH///////////
+
+`timescale 1ns / 1ps
+
+module my2to1multiplexer_tb;
+
+    // Inputs
+    reg a;
+    reg b;
+    reg sel;
+
+    // Output
+    wire y;
+
+    // Instantiate the multiplexer
+    my2to1multiplexer uut (
+        .a(a),
+        .b(b),
+        .sel(sel),
+        .y(y)
+    );
+
+    // Test vector
+    initial begin
+        // Initialize inputs
+        a = 0; b = 0; sel = 0;
+        #10; // Wait for 10 time units
+
+        // Apply test vectors
+        a = 0; b = 0; sel = 0; #10;
+        a = 0; b = 1; sel = 0; #10;
+        a = 1; b = 0; sel = 0; #10;
+        a = 1; b = 1; sel = 0; #10;
+        a = 0; b = 0; sel = 1; #10;
+        a = 0; b = 1; sel = 1; #10;
+        a = 1; b = 0; sel = 1; #10;
+        a = 1; b = 1; sel = 1; #10;
+
+        // End of test
+        $finish;
+    end
+
+    // Monitor the inputs and output
+    initial begin
+        $monitor("Time = %0d, a = %b, b = %b, sel = %b, y = %b", $time, a, b, sel, y);
+    end
+
+endmodule
+__________________________________________________________________________________________________
+// VERILOG CODE AND TESTBENCH FOR 4 TO 1 MULTIPLEXER //
+
+
+module my4to1multiplexer (
+    input wire [3:0] a,
+    input wire [3:0] b,
+    input wire [3:0] c,
+    input wire [3:0] d,
+    input wire [1:0] sel,
+    output wire [3:0] y
+);
+
+assign y = (sel == 2'b00) ? a :
+           (sel == 2'b01) ? b :
+           (sel == 2'b10) ? c :
+           (sel == 2'b11) ? d :
+           4'bx; // Default value (should not occur)
+
+endmodule
+
+//////////TESTBENCH///////////
+
+`timescale 1ns / 1ps
+
+module my4to1multiplexer_tb;
+
+    // Inputs
+    reg [3:0] a, b, c, d;
+    reg [1:0] sel;
+
+    // Output
+    wire [3:0] y;
+
+    // Instantiate the 4-to-1 multiplexer
+    my4to1multiplexer uut (
+        .a(a),
+        .b(b),
+        .c(c),
+        .d(d),
+        .sel(sel),
+        .y(y)
+    );
+
+    // Test vector
+    initial begin
+        // Initialize inputs
+        a = 4'b0000; b = 4'b0001; c = 4'b0010; d = 4'b0011;
+        sel = 2'b00;
+        #10; // Wait for 10 time units
+
+        // Apply test vectors
+        a = 4'b0000; b = 4'b0001; c = 4'b0010; d = 4'b0011; sel = 2'b00; #10;
+        a = 4'b0000; b = 4'b0001; c = 4'b0010; d = 4'b0011; sel = 2'b01; #10;
+        a = 4'b0000; b = 4'b0001; c = 4'b0010; d = 4'b0011; sel = 2'b10; #10;
+        a = 4'b0000; b = 4'b0001; c = 4'b0010; d = 4'b0011; sel = 2'b11; #10;
+
+        // End of test
+        $finish;
+    end
+
+    // Monitor the inputs and output
+    initial begin
+        $monitor("Time = %0d, a = %h, b = %h, c = %h, d = %h, sel = %h, y = %h", $time, a, b, c, d, sel, y);
+    end
+
+endmodule
+__________________________________________________________________________________________________________________
+// VERILOG CODE AND TESTBENCH FOR 8 TO 1 MULTIPLEXER //
+
+
+module my8to1multiplexer (
+    input wire [7:0] a,
+    input wire [7:0] b,
+    input wire [7:0] c,
+    input wire [7:0] d,
+    input wire [7:0] e,
+    input wire [7:0] f,
+    input wire [7:0] g,
+    input wire [7:0] h,
+    input wire [2:0] sel,
+    output wire [7:0] y
+);
+
+assign y = (sel == 3'b000) ? a :
+           (sel == 3'b001) ? b :
+           (sel == 3'b010) ? c :
+           (sel == 3'b011) ? d :
+           (sel == 3'b100) ? e :
+           (sel == 3'b101) ? f :
+           (sel == 3'b110) ? g :
+           (sel == 3'b111) ? h :
+           8'bx; // Default value (should not occur)
+
+endmodule
+
+/////////TESTBENCH////////////
+
+`timescale 1ns / 1ps
+
+module my8to1multiplexer_tb;
+
+    // Inputs
+    reg [7:0] a, b, c, d, e, f, g, h;
+    reg [2:0] sel;
+
+    // Output
+    wire [7:0] y;
+
+    // Instantiate the 8-to-1 multiplexer
+    my8to1multiplexer uut (
+        .a(a),
+        .b(b),
+        .c(c),
+        .d(d),
+        .e(e),
+        .f(f),
+        .g(g),
+        .h(h),
+        .sel(sel),
+        .y(y)
+    );
+
+    // Test vector
+    initial begin
+        // Initialize inputs
+        a = 8'b00000000; b = 8'b00000001; c = 8'b00000010; d = 8'b00000011;
+        e = 8'b00000100; f = 8'b00000101; g = 8'b00000110; h = 8'b00000111;
+        sel = 3'b000;
+        #10; // Wait for 10 time units
+
+        // Apply test vectors
+        a = 8'b00000000; b = 8'b00000001; c = 8'b00000010; d = 8'b00000011;
+        e = 8'b00000100; f = 8'b00000101; g = 8'b00000110; h = 8'b00000111;
+        sel = 3'b000; #10;
+        sel = 3'b001; #10;
+        sel = 3'b010; #10;
+        sel = 3'b011; #10;
+        sel = 3'b100; #10;
+        sel = 3'b101; #10;
+        sel = 3'b110; #10;
+        sel = 3'b111; #10;
+
+        // End of test
+        $finish;
+    end
+
+    // Monitor the inputs and output
+    initial begin
+        $monitor("Time = %0d, a = %h, b = %h, c = %h, d = %h, e = %h, f = %h, g = %h, h = %h, sel = %b, y = %h", 
+                 $time, a, b, c, d, e, f, g, h, sel, y);
+    end
+
+endmodule
+___________________________________________________________________________________________________________________
+// VERILOG CODE AND TESTBENCH FOR 16 TO 1 MULTIPLEXER //
+
+
+module my16to1multiplexer (
+    input wire [15:0] a,
+    input wire [15:0] b,
+    input wire [15:0] c,
+    input wire [15:0] d,
+    input wire [15:0] e,
+    input wire [15:0] f,
+    input wire [15:0] g,
+    input wire [15:0] h,
+    input wire [15:0] i,
+    input wire [15:0] j,
+    input wire [15:0] k,
+    input wire [15:0] l,
+    input wire [15:0] m,
+    input wire [15:0] n,
+    input wire [15:0] o,
+    input wire [15:0] p,
+    input wire [3:0] sel,
+    output wire [15:0] y
+);
+
+assign y = (sel == 4'b0000) ? a :
+           (sel == 4'b0001) ? b :
+           (sel == 4'b0010) ? c :
+           (sel == 4'b0011) ? d :
+           (sel == 4'b0100) ? e :
+           (sel == 4'b0101) ? f :
+           (sel == 4'b0110) ? g :
+           (sel == 4'b0111) ? h :
+           (sel == 4'b1000) ? i :
+           (sel == 4'b1001) ? j :
+           (sel == 4'b1010) ? k :
+           (sel == 4'b1011) ? l :
+           (sel == 4'b1100) ? m :
+           (sel == 4'b1101) ? n :
+           (sel == 4'b1110) ? o :
+           (sel == 4'b1111) ? p :
+           16'bx; // Default value (should not occur)
+
+endmodule
+
+
+/////////////TESTBENCH////////////////
+
+`timescale 1ns / 1ps
+
+module my16to1multiplexer_tb;
+
+    // Inputs
+    reg [15:0] a, b, c, d, e, f, g, h, i, j, k, l, m, n, o, p;
+    reg [3:0] sel;
+
+    // Output
+    wire [15:0] y;
+
+    // Instantiate the 16-to-1 multiplexer
+    my16to1multiplexer uut (
+        .a(a),
+        .b(b),
+        .c(c),
+        .d(d),
+        .e(e),
+        .f(f),
+        .g(g),
+        .h(h),
+        .i(i),
+        .j(j),
+        .k(k),
+        .l(l),
+        .m(m),
+        .n(n),
+        .o(o),
+        .p(p),
+        .sel(sel),
+        .y(y)
+    );
+
+    // Test vector
+    initial begin
+        // Initialize inputs
+        a = 16'b0000000000000000; b = 16'b0000000000000001; c = 16'b0000000000000010; d = 16'b0000000000000011;
+        e = 16'b0000000000000100; f = 16'b0000000000000101; g = 16'b0000000000000110; h = 16'b0000000000000111;
+        i = 16'b0000000000001000; j = 16'b0000000000001001; k = 16'b0000000000001010; l = 16'b0000000000001011;
+        m = 16'b0000000000001100; n = 16'b0000000000001101; o = 16'b0000000000001110; p = 16'b0000000000001111;
+        sel = 4'b0000;
+        #10; // Wait for 10 time units
+
+        // Apply test vectors
+        sel = 4'b0000; #10;
+        sel = 4'b0001; #10;
+        sel = 4'b0010; #10;
+        sel = 4'b0011; #10;
+        sel = 4'b0100; #10;
+        sel = 4'b0101; #10;
+        sel = 4'b0110; #10;
+        sel = 4'b0111; #10;
+        sel = 4'b1000; #10;
+        sel = 4'b1001; #10;
+        sel = 4'b1010; #10;
+        sel = 4'b1011; #10;
+        sel = 4'b1100; #10;
+        sel = 4'b1101; #10;
+        sel = 4'b1110; #10;
+        sel = 4'b1111; #10;
+
+        // End of test
+        $finish;
+    end
+
+    // Monitor the inputs and output
+    initial begin
+        $monitor("Time = %0d, a = %h, b = %h, c = %h, d = %h, e = %h, f = %h, g = %h, h = %h, i = %h, j = %h, k = %h, l = %h, m = %h, n = %h, o = %h, p = %h, sel = %b, y = %h", 
+                 $time, a, b, c, d, e, f, g, h, i, j, k, l, m, n, o, p, sel, y);
+    end
+
+endmodule
+_____________________________________________________________________________________________________________________________
